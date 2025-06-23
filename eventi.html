@@ -24,6 +24,7 @@ title: Eventi
                             <div class="card-text flex-grow-1">
                                 {{ event.content }}
                             </div>
+                            <a href="{{ event.url }}" class="btn btn-outline-primary btn-sm">Leggi di più</a>
                             {% if event.date %}
                                 <div class="mt-auto">
                                     <small class="text-muted">
@@ -31,6 +32,7 @@ title: Eventi
                                     </small>
                                 </div>
                             {% endif %}
+                            
                         </div>
                     </div>
                 </div>

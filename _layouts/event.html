@@ -1,0 +1,44 @@
+---
+layout: default
+---
+
+<section class="hero-section text-center">
+    <div class="container">
+        <h1 class="display-4 mb-3">{{ page.title }}</h1>
+        {% if page.date %}
+            <p class="lead">📅 {{ page.date | date: "%d/%m/%Y alle %H:%M" }}</p>
+        {% endif %}
+        {% if page.location %}
+            <p class="lead">📍 {{ page.location }}</p>
+        {% endif %}
+    </div>
+</section>
+
+<div class="container my-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            {% if page.image %}
+                <img src="{{ page.image }}" alt="{{ page.title }}" class="img-fluid rounded mb-4 w-100" style="height: 400px; object-fit: cover;">
+            {% endif %}
+            
+            <div class="bg-white p-4 rounded shadow-sm border-top border-primary border-4">
+                {% if page.price %}
+                    <div class="alert alert-info mb-4">
+                        <strong>💰 Prezzo:</strong> {{ page.price }}
+                    </div>
+                {% endif %}
+                
+                <div class="content">
+                    {{ content }}
+                </div>
+                
+                <hr class="my-4">
+                
+                <div class="text-center">
+                    <a href="/contatti.html" class="btn btn-primary btn-lg me-3">Contattaci per Info</a>
+                    <a href="/eventi.html" class="btn btn-outline-secondary">Torna agli Eventi</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
