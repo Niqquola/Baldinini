@@ -1,0 +1,49 @@
+---
+layout: default
+title: Eventi
+---
+
+<section class="hero-section text-center">
+    <div class="container">
+        <h1 class="display-4 mb-3">I Nostri Eventi</h1>
+        <p class="lead">Scopri i nostri workshop, seminari e attività per famiglie</p>
+    </div>
+</section>
+
+<div class="container my-5">
+    {% if site.events.size > 0 %}
+        <div class="row g-4">
+            {% for event in site.events %}
+                <div class="col-md-6 col-lg-4">
+                    <div class="card event-card h-100">
+                        {% if event.image %}
+                            <img src="{{ event.image }}" class="card-img-top event-image" alt="{{ event.title }}">
+                        {% endif %}
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title" style="font-family: 'Vollkorn', serif; color: #D35400;">{{ event.title }}</h5>
+                            <div class="card-text flex-grow-1">
+                                {{ event.content }}
+                            </div>
+                            {% if event.date %}
+                                <div class="mt-auto">
+                                    <small class="text-muted">
+                                        <strong>📅 Data:</strong> {{ event.date | date: "%d/%m/%Y" }}
+                                    </small>
+                                </div>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    {% else %}
+        <div class="text-center">
+            <div class="alert alert-info d-inline-block" role="alert">
+                <h4 class="alert-heading">Nessun evento disponibile al momento</h4>
+                <p>Stiamo organizzando nuovi eventi e workshop. Torna presto per aggiornamenti!</p>
+                <hr>
+                <p class="mb-0">Per essere informato sui prossimi eventi, <a href="/contatti.html" class="alert-link">contattaci</a>.</p>
+            </div>
+        </div>
+    {% endif %}
+</div>

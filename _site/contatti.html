@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatti - Studio di Psicoterapia per l'Autismo</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Vollkorn:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+            line-height: 1.6;
+            color: #4A3C31;
+            background-color: #FFF7ED;
+        }
+        
+        .navbar {
+            background-color: #F9703E !important;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo-image {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+        
+        .logo-text {
+            font-family: 'Vollkorn', serif;
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: white;
+        }
+        
+        .hero-section {
+            background-color: #F7A440;
+            color: #4A3C31;
+            padding: 4rem 0;
+        }
+        
+        .hero-section h1 {
+            font-family: 'Vollkorn', serif;
+            font-weight: 700;
+            text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.5);
+        }
+        
+        .feature-card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            border-top: 4px solid #F9703E;
+            height: 100%;
+        }
+        
+        .feature-card h3 {
+            font-family: 'Vollkorn', serif;
+            color: #D35400;
+        }
+        
+        .btn-primary {
+            background-color: #D35400;
+            border-color: #D35400;
+        }
+        
+        .btn-primary:hover {
+            background-color: #A04000;
+            border-color: #A04000;
+        }
+        
+        .event-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            border-top: 4px solid #F9703E;
+            transition: transform 0.2s;
+        }
+        
+        .event-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .event-image {
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        footer {
+            background-color: #FFEDDB;
+            color: #4A3C31;
+            border-top: 3px solid #D35400;
+            margin-top: 3rem;
+        }
+        
+        .staff-photo {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #F9703E;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <div class="logo-container">
+                <svg class="logo-image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                    <circle cx="50" cy="50" r="45" fill="#FFF7ED" stroke="#D35400" stroke-width="2"/>
+                    <path d="M50 15 C60 15, 70 30, 70 45 C70 60, 60 75, 50 75 C40 75, 30 60, 30 45 C30 30, 40 15, 50 15" 
+                          fill="none" stroke="#F9703E" stroke-width="4" stroke-linecap="round"/>
+                    <line x1="50" y1="55" x2="50" y2="85" stroke="#D35400" stroke-width="4" stroke-linecap="round"/>
+                    <circle cx="38" cy="30" r="4" fill="#F7A440"/>
+                    <circle cx="62" cy="30" r="4" fill="#F7A440"/>
+                    <circle cx="30" cy="50" r="4" fill="#F7A440"/>
+                    <circle cx="70" cy="50" r="4" fill="#F7A440"/>
+                    <circle cx="38" cy="70" r="4" fill="#F7A440"/>
+                    <circle cx="62" cy="70" r="4" fill="#F7A440"/>
+                </svg>
+                <div class="logo-text">Studio di Psicoterapia per l'Autismo</div>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contatti.html">Contatti</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/eventi.html">Eventi</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <section class="hero-section text-center">
+    <div class="container">
+        <h1 class="display-4 mb-3">Contattaci</h1>
+        <p class="lead">Contatta il nostro team per supporto e informazioni</p>
+    </div>
+</section>
+
+<div class="container my-5">
+    <div class="row g-4">
+        <div class="col-lg-6">
+            <div class="bg-white p-4 rounded shadow-sm border-top border-primary border-4">
+                <h2 style="font-family: 'Vollkorn', serif;" class="mb-4">Il Nostro Team</h2>
+                
+                <div class="d-flex mb-4 pb-3 border-bottom">
+                    <img src="https://via.placeholder.com/100x100" alt="Dott.ssa Sara Rossi" class="staff-photo me-3">
+                    <div>
+                        <h5 style="color: #D35400;">Dott.ssa Sara Rossi</h5>
+                        <p class="text-muted fst-italic mb-2">Direttrice Clinica</p>
+                        <p class="mb-2">La Dott.ssa Rossi ha oltre 15 anni di esperienza nella valutazione e terapia dell'autismo. È specializzata in programmi di intervento precoce e formazione per genitori.</p>
+                        <p class="mb-1"><strong>📧</strong> sara.rossi@centrosupportoautismo.org</p>
+                        <p><strong>📞</strong> (123) 456-7891</p>
+                    </div>
+                </div>
+
+                <div class="d-flex mb-4 pb-3 border-bottom">
+                    <img src="https://via.placeholder.com/100x100" alt="Marco Bianchi" class="staff-photo me-3">
+                    <div>
+                        <h5 style="color: #D35400;">Marco Bianchi, BCBA</h5>
+                        <p class="text-muted fst-italic mb-2">Analista Comportamentale</p>
+                        <p class="mb-2">Marco sviluppa e supervisiona piani di intervento comportamentale e programmi di abilità sociali per bambini e adolescenti con autismo.</p>
+                        <p class="mb-1"><strong>📧</strong> marco.bianchi@centrosupportoautismo.org</p>
+                        <p><strong>📞</strong> (123) 456-7892</p>
+                    </div>
+                </div>
+
+                <div class="d-flex mb-4 pb-3 border-bottom">
+                    <img src="https://via.placeholder.com/100x100" alt="Elena Verdi" class="staff-photo me-3">
+                    <div>
+                        <h5 style="color: #D35400;">Elena Verdi, M.Ed.</h5>
+                        <p class="text-muted fst-italic mb-2">Specialista Educativa</p>
+                        <p class="mb-2">Elena lavora con scuole e famiglie per sviluppare piani educativi efficaci e adattamenti in classe per studenti con autismo.</p>
+                        <p class="mb-1"><strong>📧</strong> elena.verdi@centrosupportoautismo.org</p>
+                        <p><strong>📞</strong> (123) 456-7893</p>
+                    </div>
+                </div>
+
+                <div class="d-flex">
+                    <img src="https://via.placeholder.com/100x100" alt="Davide Neri" class="staff-photo me-3">
+                    <div>
+                        <h5 style="color: #D35400;">Davide Neri</h5>
+                        <p class="text-muted fst-italic mb-2">Coordinatore Supporto Famiglie</p>
+                        <p class="mb-2">Davide collega le famiglie con risorse, gruppi di supporto e servizi comunitari per migliorare la qualità della vita delle persone con autismo.</p>
+                        <p class="mb-1"><strong>📧</strong> davide.neri@centrosupportoautismo.org</p>
+                        <p><strong>📞</strong> (123) 456-7894</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-6">
+            <div class="bg-white p-4 rounded shadow-sm border-top border-primary border-4">
+                <h2 style="font-family: 'Vollkorn', serif;" class="mb-4">Contattaci</h2>
+                <form action="https://formspree.io/f/xjvqqbov" method="POST">
+                    <input type="hidden" name="_to" value="nicola2165@gmail.com">
+                    
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Il Tuo Nome</label>
+                        <input type="text" class="form-control" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Indirizzo Email</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">Numero di Telefono</label>
+                        <input type="tel" class="form-control" id="phone" name="phone">
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="subject" class="form-label">Oggetto</label>
+                        <select class="form-select" id="subject" name="subject">
+                            <option value="general">Informazioni Generali</option>
+                            <option value="services">Informazioni sui Servizi</option>
+                            <option value="appointment">Richiesta Appuntamento</option>
+                            <option value="feedback">Feedback</option>
+                        </select>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Il Tuo Messaggio</label>
+                        <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    
+                    <input type="hidden" name="_subject" value="Nuovo messaggio dallo Studio di Psicoterapia per l'Autismo">
+                    <input type="text" name="_gotcha" style="display:none">
+                    
+                    <button type="submit" class="btn btn-primary">Invia Messaggio</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <section class="mt-5">
+        <h2 style="font-family: 'Vollkorn', serif;" class="mb-4">Visita il Nostro Studio</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <p>Siamo situati in una struttura accogliente e accessibile progettata per soddisfare le esigenze delle persone con autismo e delle loro famiglie.</p>
+                <div class="mb-3">
+                    <p><strong>📍</strong> Via Madonna dello Schioppo, 67, 47521 Cesena FC</p>
+                    <p><strong>📞</strong> Prenotazioni: (123) 456-7890</p>
+                    <p><strong>📧</strong> info@centrosupportoautismo.org</p>
+                    <p><strong>ℹ️</strong> Accesso solo su prenotazione tramite email o chiamata</p>
+                </div>
+                <div>
+                    <p><strong>🕒 Orari:</strong></p>
+                    <p>Lunedì-Venerdì: 8:00 - 18:00<br>
+                    Sabato: 9:00 - 13:00 (Solo su appuntamento)<br>
+                    Domenica: Chiuso</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="ratio ratio-16x9">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2862.5762059404227!2d12.2327312!3d44.1339841!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132cb4ef4a0e44b9%3A0x9c3c7d76b13fe54e!2sVia%20Madonna%20dello%20Schioppo%2C%2067%2C%2047521%20Cesena%20FC!5e0!3m2!1sit!2sit!4v1680183812345!5m2!1sit!2sit" 
+                            style="border:0; border-radius:10px;" allowfullscreen="" loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center py-4">
+        <div class="container">
+            <p class="mb-1">&copy; 2025 Studio di Psicoterapia per l'Autismo. Tutti i diritti riservati.</p>
+            <p class="mb-1">Via Madonna dello Schioppo, 67, 47521 Cesena FC</p>
+            <p class="mb-0">Telefono: (123) 456-7890 | Email: info@centrosupportoautismo.org</p>
+            <p><small>Accesso solo su prenotazione tramite email o chiamata</small></p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

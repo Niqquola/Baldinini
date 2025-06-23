@@ -1,0 +1,42 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images"
+public_folder: "/images"
+
+locale: "it"
+
+collections:
+  - name: "pages"
+    label: "Pagine"
+    files:
+      - name: "home"
+        label: "Pagina Home"
+        file: "index.html"
+        fields:
+          - {label: "Layout", name: "layout", widget: "hidden", default: "default"}
+          - {label: "Titolo", name: "title", widget: "string"}
+          - {label: "Contenuto Hero", name: "hero_title", widget: "string", hint: "Titolo principale della sezione hero"}
+          - {label: "Sottotitolo Hero", name: "hero_subtitle", widget: "text", hint: "Descrizione sotto il titolo principale"}
+          - {label: "Contenuto", name: "body", widget: "markdown"}
+      - name: "contact"
+        label: "Pagina Contatti"
+        file: "contatti.html"
+        fields:
+          - {label: "Layout", name: "layout", widget: "hidden", default: "default"}
+          - {label: "Titolo", name: "title", widget: "string"}
+          - {label: "Contenuto", name: "body", widget: "markdown"}
+  
+  - name: "events"
+    label: "Eventi"
+    folder: "_events"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Titolo", name: "title", widget: "string"}
+      - {label: "Data", name: "date", widget: "datetime", date_format: "DD/MM/YYYY", time_format: "HH:mm", format: "YYYY-MM-DD HH:mm:ss"}
+      - {label: "Immagine", name: "image", widget: "image", hint: "Carica un'immagine per l'evento"}
+      - {label: "Descrizione", name: "body", widget: "markdown", hint: "Descrizione completa dell'evento"}
+      - {label: "Luogo", name: "location", widget: "string", required: false, hint: "Dove si svolge l'evento"}
+      - {label: "Prezzo", name: "price", widget: "string", required: false, hint: "Costo di partecipazione (es: Gratuito, €50)"}

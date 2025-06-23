@@ -1,0 +1,25 @@
+title: "Studio di Psicoterapia per l'Autismo"
+description: "Supporto specializzato per l'autismo a Cesena"
+url: "https://yoursite.netlify.app"
+baseurl: ""
+
+# Collections
+collections:
+  events:
+    output: true
+    permalink: /eventi/:name/
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+
+# Site settings
+locale: "it-IT"
+timezone: Europe/Rome
+
+# Exclude from build
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
