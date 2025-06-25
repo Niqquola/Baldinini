@@ -1,0 +1,26 @@
+Indirizzo Bozza:
+https://studio-autismo.netlify.app/
+
+Per gestire eventi/blogpost:
+https://studio-autismo.netlify.app/admin
+Per ora funziona solo login con google, con invito (che devo abilitare io) per definire gli editor, mi invii una mail e ti abilito.
+
+
+Lista siti da prendere come esempio per lo stile:
+https://psycheferrara.com/psicologia-clinica-giuridica-psicoterapia/
+https://www.anacleto.education/
+https://www.centrovelacomo.it/
+https://www.autismo-cetra.it/
+https://www.unobravo.com/
+http://www.specialeautismo.it/servizi/menu/dinamica.aspx?idArea=17033&idCat=17034&ID=17041&TipoElemento=Categoria
+(di solito i siti "educativi" tendono verso il bianco, mentre quelli che offrono un servizio hanno colori più "caldi")
+
+se ne conosci uno che ti piace, fammi sapere che prendo spunto da quello!
+
+Di solito i siti internet hanno uno costo di mantenimento, chiamato costo di "hosting". Ho scelto un hosting gratuito per sempre, ma ha limitazioni di carico (25.000 aperture al mese).
+
+
+Per il nome del sito, qualsiasi nome che finisca per ".netlify.app" rimane gratis per sempre. 
+Se invece ne vuoi uno tuo, puoi fare una stima su godaddy.com, bisogna pagare direttamente l'azienda che ti fornisce il dominio, io te lo associo solo.
+
+
